@@ -18,13 +18,15 @@ class Main extends Component {
         this.setState({
             kitty: event.target.value
         })
-        console.log(this.state.kitty)
+  
     }
 
     addKitty() {
         this.setState({
-            kitties: [...this.state.kitties, this.state.kitty]
+            kitties: [...this.state.kitties, this.state.kitty],
+            kitty: ''
         })
+        
     }
 
     render(){
@@ -36,7 +38,7 @@ class Main extends Component {
 
         return (
            <div className='main'>
-                <input onChange={ this.inputValue } />
+                <input onChange={ this.inputValue } value={ this.state.kitty } />
                 <button onClick={ this.addKitty }> Add Kitty </button>
 
                 { kittiesArray }
