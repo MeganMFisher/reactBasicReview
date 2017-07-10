@@ -1,0 +1,14 @@
+.navBar {
+    width: 100%;
+    height: 80px;
+    background: gray;
+}
+
+.navBar div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    float: right;
+    margin-right: 50px;
+}
